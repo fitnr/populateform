@@ -1,0 +1,25 @@
+{
+  "name": "populateform",
+  "version": "0.0.1",
+  "description": "Populate a form with data from a query string",
+  "main": "populateform.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/fitnr/populateform"
+  },
+  "keywords": [
+    "form",
+    "query",
+    "populate",
+    "web"
+  ],
+  "author": "Neil Freeman <contact@fakeisthenewreal.org>",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/fitnr/populateform/issues"
+  },
+  "homepage": "https://github.com/fitnr/populateform"
+}
