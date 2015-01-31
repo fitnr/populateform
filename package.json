@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "description": "Populate a form with data from a query string",
   "main": "populateform.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "ender": "./lib/ender.js",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "http://github.com/fitnr/populateform"
   },
   "keywords": [
+    "ender",
     "form",
     "query",
     "populate",
