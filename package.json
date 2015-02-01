@@ -1,6 +1,6 @@
 {
   "name": "populateform",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Populate a form with data from a query string",
   "main": "populateform.js",
   "ender": "./lib/ender.js",
