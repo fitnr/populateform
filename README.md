@@ -1,6 +1,6 @@
 # Populateform
 
-Populate a form with data from a query string. Super useful if have a form as part of some dynamic content on your page.
+Populate a form with data from a query string. Super useful if you have a form as part of some dynamic content on your page, but don't need the weight of an entire library or framework.
 
 Populateform is dependency-free, platform-agnostic and super-lightweight (< 1 KB).
 
@@ -34,7 +34,26 @@ Extra keys in the data will be ignored, and fields not in the data aren't touche
 
 Populate form will try to fire a change event at the appropriate time, old browsers may have trouble with that.
 
-## jQuery, Zepto, Ender, whatever
+## Use
+
+Works great with Browserify:
+
+````js
+// src/my-form.js
+module.exports.populateform = require('populateform');
+
+/* 
+    some code that uses populateform...
+*/
+````
+
+Then do something like this (maybe you use Grunt or Gulp).
+
+````
+$ browserify src/my-form.js > build/my-form.min.js
+`````
+
+### jQuery, Zepto, Ender, whatever
 
 If you prefer to run with a library, use `populateform.%.min.js`. If you use Ender, run `ender add populateform`).
 
@@ -45,5 +64,3 @@ Use it like so:
 var data = document.location.search;
 $('#my_form').populateform(data);
 ````
-
-Works great with Browserify, too.
