@@ -7,14 +7,14 @@ Populateform is dependency-free, platform-agnostic and super-lightweight (< 1 KB
 ## Basics
 
 ````html
-<form action="" id="my_form">
-    <input type="text" name="my_field" type="text">
+<form action="" id="myForm">
+    <input type="text" name="myField" type="text">
 </form>
 
 <script src="populateform.min.js"></script>
 <script>
-    var form = document.getElementById('my_form');
-    var data = {'my_field': 'Hello World'};
+    var form = document.getElementById('myForm');
+    var data = {'myField': 'Hello World'};
 
     // populate the form!
     populateform(form, data);
@@ -30,7 +30,7 @@ The real fun is when you have a page with a query string, say: `http://example.c
 populateform(form, document.location.search)
 ````
 
-Extra keys in the data will be ignored, and fields not in the data aren't touched.
+Extra keys in the data will be ignored, and form fields not in the data aren't touched.
 
 Populate form will try to fire a change event at the appropriate time, old browsers may have trouble with that.
 
@@ -40,11 +40,12 @@ Works great with Browserify:
 
 ````js
 // src/my-form.js
-module.exports.populateform = require('populateform');
+populateform = require('populateform');
 
 /* 
-    some code that uses populateform...
+    some code that defines an element and data...
 */
+populateform(elem, data);
 ````
 
 Then do something like this (maybe you use Grunt or Gulp).
@@ -60,7 +61,7 @@ If you prefer to run with a library, use `populateform.%.min.js`. If you use End
 Use it like so:
 
 ````javascript
-// in real life, you would want to process this.
+// in real life, you would likely want to process and parse this.
 var data = document.location.search;
 $('#my_form').populateform(data);
 ````
