@@ -1,0 +1,29 @@
+{
+  "name": "populateform",
+  "main": "populateform.js",
+  "version": "0.0.3",
+  "homepage": "https://github.com/fitnr/populateform",
+  "authors": [
+    "Neil Freeman <contact@fakeisthenewreal.org>"
+  ],
+  "description": "Populate a form with data from a query string",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": [
+    "form",
+    "query",
+    "populate",
+    "web",
+    "front-end"
+  ],
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

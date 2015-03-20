@@ -14,7 +14,8 @@
     "form",
     "query",
     "populate",
-    "web"
+    "web",
+    "front-end"
   ],
   "author": "Neil Freeman <contact@fakeisthenewreal.org>",
   "license": "GPLv3",
